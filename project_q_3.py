@@ -1,12 +1,8 @@
 '''
-Question 3
-Load the “UniversalBank(1).csv" (this dataset is taken from the website of the book "Data
-mining for business intelligence" by Shmueli, Patel and Bruce, 1st ed, Wiley 2006).
-The data set provides information about many people and our goal is to build a model
-to classify the cases into those who will accept the offer of a personal loan and
-those who will reject it. In the data, a zero in the Personal loan column indicates
-that the concerned person rejected the offer and a one indicates that the person
-accepted the offer.
+Load the “UniversalBank(1).csv" (this dataset is taken from the website of the book "Data mining for business intelligence" by Shmueli, Patel and Bruce, 1st ed, Wiley 2006).
+The data set provides information about many people and our goal is to build a model to classify the cases into those who will accept the offer of a personal loan and those who will reject it. 
+In the data, a zero in the Personal loan column indicates that the concerned person rejected the offer and a one indicates that the person accepted the offer. 
+Answer the following questions:
 '''
 
 # import necessary libraries
@@ -22,7 +18,7 @@ df = pd.read_csv('UniversalBank(1).csv')
 X = df.drop('Personal Loan', axis=1)
 y = df['Personal Loan']
 
-# B. Ignore the variables Row and Zip code.
+# B. Ignore the variables Row and Zip code
 df = df.drop(['Row', 'ZIP Code'], axis=1)
 
 # C. Partition the data 75/25, random_state = 2023, stratify = y
