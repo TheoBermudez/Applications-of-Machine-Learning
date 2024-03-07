@@ -1,10 +1,10 @@
 '''
 Your task is to build a classification model that predicts the edibility of mushrooms (class variable in the dataset).
-You have been provided with a dataset as a "mushrooms.csv" file.
+You have been provided with a dataset as a "mushrooms(1).csv" file.
+
 Here is a description of the attributes:
 
 Attribute description:
-
 cap-shape: bell=b, conical=c, convex=x, flat=f, knobbed=k, sunken=s
 cap-surface: fibrous=f, grooves=g, scaly=y, smooth=s
 cap-color: brown=n, buff=b, cinnamon=c, gray=g, green=r, pink=p, purple=u, red=e, white=w, yellow=y
