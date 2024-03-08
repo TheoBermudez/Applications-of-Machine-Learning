@@ -1,5 +1,5 @@
 # For this problem, you will be doing classification with KNN. The goal is to predict the quality of wine given the other attributes.
-
+ 
 # Import necessary libraries.
 import pandas as pd
 from sklearn.model_selection import train_test_split
