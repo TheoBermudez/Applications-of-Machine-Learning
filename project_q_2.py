@@ -1,15 +1,12 @@
-'''
-Question 2
-Load the file "Stores.csv". Perform k-means clustering:
-'''
+# Load the file "Stores.csv". Perform k-means clustering:
 
-# import necessary libraries
+# Import necessary libraries.
 import pandas as pd
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
 
-# Load the file "Stores.csv"
+# Load the file "Stores.csv".
 df = pd.read_csv('Stores.csv')
 
 # A. Perform the necessary data preparation for the stores dataframe:
@@ -20,7 +17,7 @@ df = df.drop('Store', axis=1)
 scaler = StandardScaler()
 df = pd.DataFrame(scaler.fit_transform(df), columns=df.columns)
 
-# B. Run k-means for k ranging from 1 to 10. random_state = 2023, n_init='auto'
+# B. Run k-means for k ranging from 1 to 10. random_state = 2023, n_init='auto'.
 inertias = []
 for k in range(1, 11):
     kmeans = KMeans(n_clusters=k, random_state=2023, n_init='auto')
